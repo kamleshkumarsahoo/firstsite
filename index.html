@@ -16,6 +16,10 @@
   <meta name="author" content="Kamlesh Kumar Sahoo">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <title>NIT Rourkela Virtual Campus</title>
   <link rel="shortcut icon" href="TemplateData/favicon.ico">
   <link rel="stylesheet" href="TemplateData/style.css">
@@ -25,17 +29,73 @@
     var unityInstance = UnityLoader.instantiate("unityContainer", "Build/NITRCampus.json", { onProgress: UnityProgress });
   </script>
 </head>
+<body style="margin: 0;">
+    <div class="webgl-content">...</div>
+    <footer style="display: flex; justify-content: left ; position: fixed; top: 0px; width: 100vw; height: 50px; background-color: rgba(0,0, 0, 0.7) ; color: white;">
+        <p style="font-family:poppins;font-size: small ; font-weight: normal ;color: rgb(255, 255, 255) ; padding-left: 10px;"> Designed and Developed by </p>
+        <p style="font-family:poppins;font-size: small; font-weight: bold;color: rgb(114, 255, 86); padding-left: 10px; padding-right: 100px;"> Kamlesh Kumar Sahoo </p>
+            
+        <style>
+            .fa {
+     
+              font-size: normal;
+              text-decoration: none;
+              text-align: center;
+              transition: all 0.1s linear;
+              height: 30px;
+              width: 30px;
+              border-radius: 20px;
+              background-color:#66FF66;
+              line-height: 29px;
+              margin: 5px;
 
-<body>
-  <div class="webgl-content">
-    <div id="unityContainer" style="width: 960px; height: 600px"></div>
-    <div class="footer">
-      <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+                }
+                
+            .fa:hover {
+              opacity: 1;
+              color: rgb(255, 255, 255);
+              padding-right: 30px;
+              }
+          
+            .fa-linkedin {
+              color:#111111;
+  
+            }
+         
+            .fa-instagram {
+              color:#111111;
+            }
+
+            .fa-envelope {
+              color:#111111;
+            }
+            .fa-globe {
+              color:#111111;
+            }
+            </style>
+
+        <!-- Add font awesome icons -->
+        <a href="https://www.linkedin.com/in/kamleshkumarsahoo" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/pixarte._" target="_blank" class="fa fa-instagram"></a>
+        <a href="mailto:iamkamlesh740@gmail.com" target="_blank" class="fa fa-envelope"></a>
+        <a href="https://kamleshkumarsahoo7.wixsite.com/kamlesh" target="_blank" class="fa fa-globe"></a>
+        <p style="font-family:poppins;font-size: small ; padding-left: 500px  ; font-weight: bold;color: rgb(114, 255, 86);  "> NITR Campus  |  NIT Rourkela </p>
+            
+        
+    </footer>
+    <footer style="display: flex; justify-content: center ; position: fixed; bottom: 0px; width: 100vw; height: 50px; background-color: rgb(47, 179, 255) ; color: white;">
+        <p style="font-family:poppins;font-size: x-small ; font-weight: normal ;color: rgb(0, 0, 0) ; padding-left: 10px;"> Special Thanks to </p>
+        <p style="font-family:poppins;font-size: x-small  ; font-weight: normal ;color: rgb(255, 255, 255) ; padding-left: 10px;"> Siddharth Samal, Ankit Ghidora & Nitin Lakra </p>
+    
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+      </div>
     </div>
-  </div>
-</body>
-<footer>
-  <p>Special Thanks to Siddharth Samal, Nitin Lakra and Ankit Ghidora</p>
-</footer>
+  </body>
+
+  
+
 
 </html>
